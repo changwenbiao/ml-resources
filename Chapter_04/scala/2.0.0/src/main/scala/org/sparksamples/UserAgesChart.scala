@@ -31,7 +31,7 @@ object UserAgesChart {
       }
     }
 
-    val mx_sorted =  ListMap(mx.toSeq.sortBy(_._1):_*)
+    val mx_sorted: Map[Int, Int] =  ListMap(mx.toSeq.sortBy(_._1):_*)
     val ds = new org.jfree.data.category.DefaultCategoryDataset
     mx_sorted.foreach{ case (k,v) => ds.addValue(v,"UserAges", k)}
 

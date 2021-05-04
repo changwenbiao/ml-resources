@@ -1,4 +1,4 @@
-package org.sparksamples.df
+package org.sparksamples
 //import org.apache.spark.sql.SQLContext
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
@@ -6,7 +6,8 @@ import org.apache.spark.sql.SparkSession
   * Created by Rajdeep Dua on 8/22/16.
   */
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType};
-package object UserData {
+
+object UserData {
   def main(args: Array[String]): Unit = {
     val customSchema = StructType(Array(
       StructField("no", IntegerType, true),
